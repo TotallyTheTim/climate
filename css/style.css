@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    overflow-x: hidden;
+}
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#ground{
+    width: max-content;
+    height: 100%;
+    background: lightcyan;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#movingwater{
+    width: max-content;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#bg{
+    position: absolute;
+    bottom: 0;
+    height: 950px;
+}
+
+#water {
+    height: 830px;
+    margin: 135px 0;
+    width: 1920px;
+    position: absolute;
+    bottom: 0;
+}
+
+#scrollScore{
+    width: max-content;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 5px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    background: none;
+}
+
+#bob{
+    position: absolute;
+    bottom: 135.5px;
+    left: 400px;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-image: url("../img/stand.png");
+    background-size: contain;
+    background-position: center;
+
+}
+
+.grass{
+    bottom: 0;
+    height: 100px;
+    width: 800px;
+    background: green;
+    background-image: linear-gradient(lightgreen,green, green);
+    position: absolute;
+}
