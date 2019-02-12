@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Teko');
+
 body{
+    font-family: 'Teko', sans-serif;
     margin: 0;
     padding: 0;
     background: black;
@@ -14,12 +17,12 @@ body{
 }
 
 #ground{
-    width: max-content;
-    height: 100%;
-    background: lightcyan;
+    background: #5c94fc;
     position: absolute;
+    height: 100vh;
     bottom: 0;
     left: 0;
+    min-width: 120vw;
 }
 
 #movingwater{
@@ -30,8 +33,29 @@ body{
     left: 0;
 }
 
+#loading{
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/wait/loading.png") black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#mountain {
+    position: fixed;
+    float: bottom;
+    bottom: 0;
+    height: 950px;
+}
+
 #bg{
-    position: absolute;
+    position: fixed;
+    float: bottom;
     bottom: 0;
     height: 950px;
 }
@@ -58,10 +82,23 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: max-content;
     height: 100vh;
     padding: 10px;
     background: none;
+}
+#text > section{
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box{
+    width: 69px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 #bob{
