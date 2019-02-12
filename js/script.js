@@ -1,6 +1,9 @@
 setTimeout(function () {
     document.getElementById('loading').style.opacity = '0';
-},3000);
+    document.getElementById('scrolly').style.height = document.getElementById('bg').offsetWidth + "px";
+},3);
+
+
 
 window.scrollTo(0, 0);
 
@@ -26,12 +29,18 @@ for (i = 0; i < Object.keys(boxes).length; i++) {
 }
 
 window.addEventListener("scroll", function (event) {
+    document.getElementById('scrolly').style.height = document.getElementById('bg').offsetWidth + "px";
+
     document.getElementById('ground').style.width = document.getElementById('bg').offsetWidth + "px";
+    document.getElementById('mountain').style.width = document.getElementById('bg').offsetWidth + "px";
+    document.getElementById('ice').style.width = document.getElementById('bg').offsetWidth + "px";
     bob_walk();
     let scroll = this.scrollY;
     document.getElementById('scrollScore').innerHTML = "score: " + Math.round(scroll/10);
     console.log(scroll);
     document.getElementById('ground').style.left = -scroll + "px";
+    document.getElementById('mountain').style.left = scroll/1.2 + "px";
+    document.getElementById('ice').style.left = scroll/1.3 + "px";
     document.getElementById('text').style.left = -scroll/2.2 + "px";
     bob.style.bottom = 135.5 + "px";
 
