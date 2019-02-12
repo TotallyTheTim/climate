@@ -59,6 +59,15 @@ body{
     background-repeat: no-repeat;
 }
 
+.standing{
+    background: url("../img/stand.png") no-repeat center !important;
+    background-size: contain !important;
+}
+
+.boxUP{
+    transform: scale(1.5) translate(0,-9px);
+}
+
 #mountain {
     background: url('../img/mountain-1.png');
     background-size: contain;
