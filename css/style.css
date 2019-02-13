@@ -167,7 +167,20 @@ body{
     background-image: url("../img/stand.png");
     background-size: contain;
     background-position: center;
+}
 
+#bear{
+    position: absolute;
+    bottom: 135.5px;
+    left: 8000px;
+    width: 116px;
+    height: 80px;
+    transform: scaleX(-1);
+    background-repeat: no-repeat;
+    background-image: url(../img/icebear.png);
+    background-size: contain;
+    background-position: center;
+    z-index: 1;
 }
 
 .grass{
@@ -177,6 +190,10 @@ body{
     background: green;
     background-image: linear-gradient(lightgreen,green, green);
     position: absolute;
+}
+
+#box4 {
+    display: none;
 }
 
 @media screen and (max-width: 800px) {
