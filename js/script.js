@@ -179,7 +179,8 @@ function newBox(left_,bottom_,key,text) {
     div.style.background = "#db5f21";
     div.style.borderBottom = "solid black 5px";
     div.style.boxShadow = "black 0 -5px 0,black -5px 0 0,black 5px 0 0,inset #fc9838 5px 5px 0";
-    div.style.padding = "4px 8px";
+    div.style.padding = "8px 12px 3px";
+    div.style.font = "32px";
     div.style.fontSize = "25px";
     div.style.opacity = "0";
     document.getElementById('ground').appendChild(img);
