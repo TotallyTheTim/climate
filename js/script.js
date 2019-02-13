@@ -31,7 +31,8 @@ let jumpies = {
 let boxes = {
     box1 : [1085,203,"Did you know that Driving a car is not good for Climate change?"],
     box2 : [5291,203,"Other Text here!"],
-    box3 : [6784,203,"Other Text LMAO!"]
+    box3 : [6784,203,"Other Text LMAO!"],
+    box4 : [7900,203,"Because of Climate Change, my Home will be melted away soon."]
 };
 
 
@@ -98,6 +99,16 @@ window.addEventListener("scroll", function (event) {
             if (scroll > 6115) {
                 document.getElementById('box3').classList.add('boxUP');
                 document.getElementById('boxbox3').style.opacity = '1';
+
+                if (scroll > 6970) {
+                    document.getElementById('boxbox4').style.opacity = '1';
+                    document.getElementById('boxbox4').style.bottom =  235.5 + "px";
+                }
+
+                else {
+                    document.getElementById('boxbox4').style.opacity = '0';
+                }
+
             }
 
             else {
