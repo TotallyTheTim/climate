@@ -176,7 +176,9 @@ function newBox(left_,bottom_,key,text) {
     div.style.bottom = bottom_ + 235.5 + "px";
     div.style.position = "absolute";
     img.style.bottom = bottom_ + 135.5 + "px";
-    div.style.background = "rgba(255,255,255,0.8)";
+    div.style.background = "#db5f21";
+    div.style.borderBottom = "solid black 5px";
+    div.style.boxShadow = "black 0 -5px 0,black -5px 0 0,black 5px 0 0,inset #fc9838 5px 5px 0";
     div.style.padding = "4px 8px";
     div.style.fontSize = "25px";
     div.style.opacity = "0";
