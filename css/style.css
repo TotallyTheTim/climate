@@ -64,7 +64,11 @@ body{
     background-size: contain !important;
 }
 
-.boxUP{
+.boxUP, .boxUP2{
+    content: url("../img/used-box.png");
+}
+
+.boxUP {
     transform: scale(1.5) translate(0,-9px);
 }
 
@@ -77,6 +81,18 @@ body{
     bottom: 234px;
     left: 0;
     min-width: 120vw;
+}
+
+#mountain2 {
+    background: url('../img/mountain-2.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+    position: absolute;
+    height: 400px;
+    bottom: 234px;
+    left: 0;
+    min-width: 120vw;
+    display: none;
 }
 
 #ice {
@@ -131,17 +147,20 @@ body{
 }
 
 .box{
-    width: 69px;
+    width: 68px;
     height: auto;
     position: absolute;
     left: 0;
     bottom: 0;
+    margin-bottom: 0.4px;
+    margin-left: 2px;
+    z-index: 1;
 }
 
 #bob{
     position: absolute;
     bottom: 135.5px;
-    left: 400px;
+    left: 650px;
     width: 80px;
     height: 80px;
     background-repeat: no-repeat;
@@ -158,4 +177,14 @@ body{
     background: green;
     background-image: linear-gradient(lightgreen,green, green);
     position: absolute;
+}
+
+@media screen and (max-width: 800px) {
+    #main{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
 }
