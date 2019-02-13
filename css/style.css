@@ -183,6 +183,19 @@ body{
     z-index: 1;
 }
 
+#car{
+    position: absolute;
+    bottom: 135.5px;
+    left: 1400px;
+    width: 290px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-image: url(../img/car.png);
+    background-size: contain;
+    background-position: center;
+    z-index: 1;
+}
+
 .grass{
     bottom: 0;
     height: 100px;
