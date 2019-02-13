@@ -5,6 +5,8 @@ setTimeout(function () {
 
 
 
+
+
 window.scrollTo(0, 0);
 
 let bob = document.getElementById('bob');
@@ -85,7 +87,8 @@ window.addEventListener("scroll", function (event) {
         }
 
     }
-    
+    if (scroll > 13317) {bob.style.opacity = '0'}
+    else                {bob.style.opacity = '1'; }
     
     
     if (scroll > 408){
