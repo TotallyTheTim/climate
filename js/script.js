@@ -90,6 +90,7 @@ window.addEventListener("scroll", function (event) {
     
     if (scroll > 408){
         document.getElementById('box1').classList.add('boxUP');
+        document.getElementById('begintext').classList.add('begonetext');
         document.getElementById('boxbox1').style.opacity = '1';
 
         if (scroll > 4614) {
@@ -124,6 +125,7 @@ window.addEventListener("scroll", function (event) {
     }
     else {
         document.getElementById('box1').classList.remove('boxUP');
+        document.getElementById('begintext').classList.remove('begonetext');
         document.getElementById('boxbox1').style.opacity = '0';
     }
 

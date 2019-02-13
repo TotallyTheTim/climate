@@ -196,6 +196,18 @@ body{
     z-index: 1;
 }
 
+#begintext {
+    position: absolute;
+    left: 600px;
+    font-size: 80px;
+    bottom: 504px;
+    transition: all .5s linear;
+}
+
+#begintext.begonetext {
+    opacity: 0;
+}
+
 .grass{
     bottom: 0;
     height: 100px;
