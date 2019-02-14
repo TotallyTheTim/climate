@@ -73,7 +73,7 @@ body{
 }
 
 #mountain {
-    background: url('../img/mountain-1.png');
+    background: url('../img/backgroundParallax2.png');
     background-size: contain;
     background-repeat: repeat-x;
     position: absolute;
@@ -202,6 +202,7 @@ body{
     font-size: 80px;
     bottom: 504px;
     transition: all .5s linear;
+    text-align: center;
 }
 
 #begintext.begonetext {
@@ -217,16 +218,10 @@ body{
     position: absolute;
 }
 
-#box4 {
+#box4, #box5 {
     display: none;
 }
 
-@media screen and (max-width: 800px) {
-    #main{
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
+section {
+    font-size: 25px;
 }

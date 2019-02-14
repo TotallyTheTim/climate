@@ -15,10 +15,13 @@ let bob_left = bob.offsetLeft;
 let lastScrollPosition = 0;
 let jumpies = {
     3.1 : [-316],
-    3.15 : [3890,5400],
+    3.15 : [3890,5400, 10120],
     5 : [3300,4490],
-    6 : [490,1150],
-    7 : [1685, 2420]
+    6 : [490,1150, 9650],
+    7 : [1685, 2420],
+    16 : [7700],
+    17: [8650],
+    21: [10750]
     // 3.1 : [180],
     // 3.15 : [4380,5900],
     //
@@ -34,7 +37,9 @@ let boxes = {
     box1 : [1085,203,"Did you know that Driving a car is not good for Climate change?"],
     box2 : [5291,203,"Other Text here!"],
     box3 : [6784,203,"Other Text LMAO!"],
-    box4 : [7900,203,"Because of Climate Change, my Home will be melted away soon."]
+    box4 : [7900,203,"Because of Climate Change, my Home will be melted away soon."],
+    box5 : [9000,203,"If an Oil Rig goes wrong, the Oil will pollute \n the Artic water and the living enviroment of \n Wildlife."],
+    box6 : [11535,203,"Because of Climate Change, the Artic Sea Ice \n and Ice Sheet has declined rapidly \n (Notice the background)"]
 };
 
 
@@ -107,6 +112,34 @@ window.addEventListener("scroll", function (event) {
                 if (scroll > 6970) {
                     document.getElementById('boxbox4').style.opacity = '1';
                     document.getElementById('boxbox4').style.bottom =  235.5 + "px";
+
+                    if (scroll > 7434) {
+                        document.getElementById('bear').style.transform = "scaleX(1)";
+
+                        if (scroll > 8105.5) {
+                            document.getElementById('boxbox5').style.opacity = '1';
+
+                            if (scroll > 10848) {
+                                document.getElementById('box6').classList.add('boxUP2');
+                                document.getElementById('boxbox6').style.opacity = '1';
+                            }
+
+                            else {
+                                document.getElementById('box6').classList.remove('boxUP2');
+                                document.getElementById('boxbox6').style.opacity = '0';
+                            }
+
+                        }
+
+                        else {
+                            document.getElementById('boxbox5').style.opacity = '0';
+                        }
+
+                    }
+                    else {
+                        document.getElementById('bear').style.transform = "scaleX(-1)";
+                    }
+
                 }
 
                 else {
