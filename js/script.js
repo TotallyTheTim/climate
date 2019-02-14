@@ -1,7 +1,7 @@
 setTimeout(function () {
     document.getElementById('loading').style.opacity = '0';
     document.getElementById('scrolly').style.height = document.getElementById('bg').offsetWidth + "px";
-},3);
+},3000);
 
 
 
