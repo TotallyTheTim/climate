@@ -35,11 +35,11 @@ let jumpies = {
 
 let boxes = {
     box1 : [1085,203,"Did you know that Driving a car is not good for Climate change?"],
-    box2 : [5291,203,"Other Text here!"],
-    box3 : [6784,203,"Other Text LMAO!"],
+    box2 : [5291,203,"The planet's average surface temperature has risen \n about 1.62 degrees Fahrenheit (0.9 degrees Celsius) \n since the late 19th century"],
+    box3 : [6784,203,"Global sea level rose about 8 inches in the last century."],
     box4 : [7900,203,"Because of Climate Change, my Home will be melted away soon."],
     box5 : [9000,203,"If an Oil Rig goes wrong, the Oil will pollute \n the Artic water and the living enviroment of \n Wildlife."],
-    box6 : [11535,203,"Because of Climate Change, the Artic Sea Ice \n and Ice Sheet has declined rapidly \n (Notice the background)"]
+    box6 : [11535,203,"Because of Climate Change, the Artic Sea Ice \n and Ice Sheet has declined rapidly \n (Notice the background)"],
 };
 
 
